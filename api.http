@@ -1,0 +1,50 @@
+POST http://localhost:3000/clients
+Content-Type: application/json
+
+{
+    "name": "Anakin Skywalker",
+    "email": "vader@empire.com",
+    "document": "12345678900",
+    "address": {
+        "street": "Rua dos Bobos",
+        "number": 0,
+        "complement": "Apto 123",
+        "city": "São Paulo",
+        "state": "SP",
+        "zipCode": "12345-678"
+    }
+}
+
+
+###
+POST http://localhost:3000/products
+Content-Type: application/json
+
+{
+    "name": "Light Saber 2",
+    "description": "An elegant weapon for a more civilized age 2222",
+    "purchasePrice": 200,
+    "stock": 10
+}
+
+###
+POST http://localhost:3000/store-catalog
+Content-Type: application/json
+
+{
+    "id": "fdc326f8-01b3-421c-a40f-2f7a7c01c409",
+    "name": "Light Saber 2",
+    "description": "An elegant weapon for a more civilized age 2222",
+    "salesPrice": 200
+}
+
+###
+POST http://localhost:3000/checkout
+Content-Type: application/json
+
+{
+    "clientId": "bff604fd-6903-48fa-9c4c-06568208279e",
+    "products": [
+        {"productId": "fdc326f8-01b3-421c-a40f-2f7a7c01c409"}
+    ]
+}

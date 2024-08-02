@@ -1,6 +1,7 @@
-import Product from "../domain/product.entity";
+import CatalogProduct from "../domain/product.entity";
 
-export default interface ProductGateway {
-  findAll(): Promise<Product[]>;
-  find(id: string): Promise<Product>;
+export default interface CatalogProductGateway {
+  add(product: CatalogProduct): Promise<void>;
+  findAll(): Promise<CatalogProduct[]>;
+  find(id: string): Promise<CatalogProduct>;
 }

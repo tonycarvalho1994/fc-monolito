@@ -33,7 +33,7 @@ export default class GenerateInvoiceUseCase {
       items: input.items.map(
         (item) =>
           new InvoiceItem({
-            id: new Id(item.id),
+            id: new Id(),
             name: item.name,
             price: item.price,
           })

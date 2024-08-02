@@ -1,4 +1,3 @@
-import Address from "../../../@shared/domain/value-object/address";
 import InvoiceGateway from "../../gateway/invoice.gateway";
 import {
   FindInvoiceUseCaseInputDTO,
